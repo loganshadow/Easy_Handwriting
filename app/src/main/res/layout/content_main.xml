@@ -5,24 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
     <ScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <HorizontalScrollView
-            android:id="@+id/hscroll"
+
+        <EditText
+            android:id="@+id/ToConvert"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:autofillHints="@string/enter_text"
+            android:background="@android:drawable/divider_horizontal_textfield"
+            android:hint="@string/enter_text"
+            android:textSize="14sp" />
 
-            <EditText
-                android:id="@+id/ToConvert"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:hint="@string/enter_text" />
-        </HorizontalScrollView>
+
     </ScrollView>
-
 
 
 </android.support.constraint.ConstraintLayout>
