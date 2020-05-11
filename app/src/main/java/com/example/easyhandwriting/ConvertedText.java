@@ -86,7 +86,7 @@ public class ConvertedText extends AppCompatActivity {
             Paragraph paragraph = new Paragraph(myString, font1);
             mDoc.add(paragraph);
             mDoc.close();
-            Toast.makeText(getApplicationContext(), getApplicationContext().getExternalFilesDir(null).toString(), Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Saved at " + getApplicationContext().getExternalFilesDir(null).toString(), Toast.LENGTH_LONG).show();
         }
         catch (Exception e){
             e.printStackTrace();

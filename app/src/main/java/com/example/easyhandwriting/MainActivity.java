@@ -1,7 +1,9 @@
 package com.example.easyhandwriting;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -52,5 +54,12 @@ public class MainActivity extends AppCompatActivity {
                 editText.setText("");
             }
         });
+
+
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
     }
 }
